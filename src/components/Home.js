@@ -1,7 +1,12 @@
 import React from 'react';
+import AppConfig from './AppConfig';
 class Home extends React.Component{
     render(){
-        return <h1>Discover Flow</h1>
+        return <>
+            <div className='extension-section'>
+                <AppConfig />
+            </div>
+        </>
     }
 }
 

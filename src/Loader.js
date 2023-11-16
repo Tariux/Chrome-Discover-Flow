@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+import "./css/style-config.css"
+import "./css/default.css"
 import "./css/main.css"
 
 import Home from './components/Home';

@@ -6,6 +6,7 @@
     padding: 0;
 }
 
-body {
-    min-width: 300px;
+.extension-section {
+    min-width: var(--extension-width);
+    padding: 25px;
 }
