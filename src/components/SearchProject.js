@@ -1,17 +1,16 @@
 import React from 'react';
-import AppConfig from './Setting';
 import Header from './includes/Header';
-class Home extends React.Component{
+class SearchProject extends React.Component{
     render(){
         return <>
             <div className='extension-section'>
                 <Header />
                 <div className='section'>
-                    <p>Home</p>
+                    <p>Search Project</p>
                 </div>
             </div>
         </>
     }
 }
 
-export default Home;
+export default SearchProject;

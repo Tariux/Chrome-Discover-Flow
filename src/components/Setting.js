@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
+import Header from "./includes/Header";
 
-function AppConfig() {
+function Setting() {
 
     const apiURL = "https://discoverflow.iran.liara.run/";
 
@@ -79,8 +80,9 @@ function AppConfig() {
         }
 
     }
-    return (
-        <>
+    return (            
+        <div className='extension-section'>
+            <Header />
             <div className='app-config'>
                 <h2 className="center title">تنظیمات برنامه</h2>
 
@@ -131,8 +133,8 @@ function AppConfig() {
 
             </div>
 
-        </>
+        </div>
     )
 }
 
-export default AppConfig
+export default Setting
