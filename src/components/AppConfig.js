@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react"
 
 function AppConfig() {
 
+    const apiURL = "https://discoverflow.iran.liara.run/";
+
     const [Profile, setProfile] = useState(false)
 
     useEffect(() => {
@@ -15,7 +17,7 @@ function AppConfig() {
     async function fetchProfile() {
 
 
-        const response = await fetch(`http://localhost:3030/db/get/`, {
+        const response = await fetch(`${apiURL}db/get/`, {
             method: 'GET',
             headers: {
                 accept: 'application/json',
@@ -39,7 +41,7 @@ function AppConfig() {
 
         await sleep(1000);
 
-        const response = await fetch(`http://localhost:3030/db/append/?key_value=${encodeURIComponent(key_value)}&value=${encodeURIComponent(value)}`, {
+        const response = await fetch(`${apiURL}db/append/?key_value=${encodeURIComponent(key_value)}&value=${encodeURIComponent(value)}`, {
             method: 'GET',
             headers: {
                 accept: 'application/json',
@@ -80,8 +82,8 @@ function AppConfig() {
     return (
         <>
             <div className='app-config'>
+                <h2 className="center title">تنظیمات برنامه</h2>
 
-                <h2 className="center">تنظیمات برنامه</h2>
                 <button type="submit" onClick={updateProfile}>ذخیره اطلاعات</button>
                 <p className="center" id="save_profile_status"></p>
 

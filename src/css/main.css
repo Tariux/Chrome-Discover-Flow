@@ -9,4 +9,8 @@
 .extension-section {
     min-width: var(--extension-width);
     padding: 25px;
+    color: #fff;
+}
+.extension-section .title {
+    margin: 1rem 0;
 }
