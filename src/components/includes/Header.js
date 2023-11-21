@@ -6,10 +6,10 @@ var Logo = require('../../../public/images/logo.png');
 
 function Header() {
   return (
-    <header className='header'>
+    <div className='header'>
       <img src={Logo.default.replace(/([^:]\/)\/+/g, "$1")} />
       <Nav /> 
-    </header>
+    </div>
   )
 }
 

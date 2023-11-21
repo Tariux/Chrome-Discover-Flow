@@ -9,10 +9,13 @@ module.exports =
   entry: path.join(__dirname, "src", "Loader.js"),
   output: {
     path: path.join(__dirname, "dist"),
-    filename: "bundle.js"
+    filename: "bundle.js",
+    clean: true,
+
   },
 
   module: {
+
     rules: [
       {
         test: /.(js|jsx)$/,
@@ -21,10 +24,12 @@ module.exports =
           loader: "babel-loader"
         }
       },
+      
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
-      },
+    
+      },  
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
         loader: 'file-loader',

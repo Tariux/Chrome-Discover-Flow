@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "React Chrome Extension",
+    "version": "0.1",
+    "description": "Boilerplate manifest for React based Chrome Extension using Google's Manifest v3",
+    "permissions": [],
+    "author": "Omid Asghari Moghadam",
+    "homepage_url": "https://github.com/Tariux/",
+    "short_name": "React Extension",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "React Chrome Extension"
+
+    }
+}

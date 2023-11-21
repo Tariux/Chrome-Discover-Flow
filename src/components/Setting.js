@@ -81,8 +81,7 @@ function Setting() {
 
     }
     return (            
-        <div className='extension-section'>
-            <Header />
+        <div className='section'>
             <div className='app-config'>
                 <h2 className="center title">تنظیمات برنامه</h2>
 
